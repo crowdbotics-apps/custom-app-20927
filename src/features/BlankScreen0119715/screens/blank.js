@@ -22,21 +22,22 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = { Input_7: "" }
+  state = {}
 
   render = () => (
-    <View style={this.props.themedStyle.View_1}>
-      <View style={this.props.themedStyle.View_3}>
+    <View style={styles.View_1}>
+      <View style={styles.View_3}>
         <Image
           resizeMode="cover"
           source={{
             uri:
               "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/Recomended_Product_Banner_fhesIad.png"
           }}
-          style={this.props.themedStyle.Image_5}
+          style={styles.Image_5}
         />
         <Input
           placeholder="Type an item to search"
+          value=""
           editable={true}
           textStyle={{
             fontSize: 12,
@@ -45,24 +46,24 @@ export class _Blank extends React.Component {
             fontWeight: "normal",
             fontStyle: "normal"
           }}
-          style={this.props.themedStyle.Input_7}
-          value={this.state.Input_7}
-          onChangeText={nextValue => this.setState({ Input_7: nextValue })}
+          style={styles.Input_7}
         />
       </View>
-      <View style={this.props.themedStyle.View_11}>
-        <View style={this.props.themedStyle.View_12}>
+      <View style={styles.View_11}>
+        <View style={styles.View_12}>
           <Image
             resizeMode="cover"
             source={{
               uri:
                 "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/p1_yUS3Jzy.png"
             }}
-            style={this.props.themedStyle.Image_15}
+            style={styles.Image_15}
           />
-          <Text style={this.props.themedStyle.Text_20}>Product 1</Text>
-          <Text style={this.props.themedStyle.Text_25}>$299</Text>
+          <Text style={styles.Text_20}>Product 1</Text>
+          <Text style={styles.Text_25}>$299</Text>
           <Button
+            title="View More"
+            color="#ff0000"
             textStyle={{
               fontSize: 14,
               color: "#000000",
@@ -70,23 +71,21 @@ export class _Blank extends React.Component {
               fontWeight: "normal",
               fontStyle: "normal"
             }}
-            style={this.props.themedStyle.Button_30}
-            onPress={() => alert("Pressed!")}
-          >
-            View More
-          </Button>
+            style={styles.Button_30}
+            onPress={() => this.props.navigation.navigate("BlankScreen2121456")}
+          />
         </View>
-        <View style={this.props.themedStyle.View_13}>
+        <View style={styles.View_13}>
           <Image
             resizeMode="cover"
             source={{
               uri:
                 "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/p1_yUS3Jzy.png"
             }}
-            style={this.props.themedStyle.Image_18}
+            style={styles.Image_18}
           />
-          <Text style={this.props.themedStyle.Text_23}>Product 2</Text>
-          <Text style={this.props.themedStyle.Text_28}>$199</Text>
+          <Text style={styles.Text_23}>Product 2</Text>
+          <Text style={styles.Text_28}>$199</Text>
         </View>
       </View>
     </View>
@@ -124,6 +123,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderRadius: 0,
     backgroundSize: "auto"
   },
+
   View_3: {
     height: 0,
     marginLeft: 0,
@@ -153,6 +153,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderRadius: 0,
     backgroundSize: "auto"
   },
+
   Image_5: {
     width: 303,
     height: 200,
@@ -174,6 +175,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderBottomWidth: 0,
     borderRadius: 0
   },
+
   Input_7: {
     width: "100%",
     marginLeft: 0,
@@ -205,6 +207,7 @@ export default Blank = withStyles(_Blank, theme => ({
     lineHeight: 12,
     letterSpacing: 0
   },
+
   View_11: {
     marginLeft: 0,
     marginRight: 0,
@@ -235,6 +238,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderRadius: 0,
     backgroundSize: "auto"
   },
+
   View_12: {
     marginLeft: 0,
     marginRight: 0,
@@ -265,6 +269,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderRadius: 0,
     backgroundSize: "auto"
   },
+
   Image_15: {
     width: 133,
     height: 133,
@@ -287,6 +292,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderBottomWidth: 0,
     borderRadius: 0
   },
+
   Text_20: {
     marginLeft: 0,
     marginRight: 0,
@@ -317,6 +323,7 @@ export default Blank = withStyles(_Blank, theme => ({
     lineHeight: 12,
     letterSpacing: 0
   },
+
   Text_25: {
     marginLeft: 0,
     marginRight: 0,
@@ -346,6 +353,7 @@ export default Blank = withStyles(_Blank, theme => ({
     lineHeight: 12,
     letterSpacing: 0
   },
+
   Button_30: {
     width: "100%",
     marginLeft: 0,
@@ -373,6 +381,7 @@ export default Blank = withStyles(_Blank, theme => ({
     lineHeight: 12,
     letterSpacing: 0
   },
+
   View_13: {
     marginLeft: 0,
     marginRight: 0,
@@ -403,6 +412,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderRadius: 0,
     backgroundSize: "auto"
   },
+
   Image_18: {
     width: 133,
     height: 133,
@@ -425,6 +435,7 @@ export default Blank = withStyles(_Blank, theme => ({
     borderBottomWidth: 0,
     borderRadius: 0
   },
+
   Text_23: {
     marginLeft: 0,
     marginRight: 0,
@@ -453,6 +464,7 @@ export default Blank = withStyles(_Blank, theme => ({
     textTransform: "none",
     lineHeight: 12
   },
+
   Text_28: {
     marginLeft: 0,
     marginRight: 0,
