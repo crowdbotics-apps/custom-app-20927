@@ -9,4 +9,13 @@ class Products(models.Model):
     )
 
 
+class Product(models.Model):
+    "Generated Model"
+    name = models.CharField(
+        max_length=256,
+    )
+    price = models.FloatField()
+    image = models.URLField()
+
+
 # Create your models here.
