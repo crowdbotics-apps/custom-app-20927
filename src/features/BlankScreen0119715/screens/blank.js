@@ -50,6 +50,28 @@ export class _Blank extends React.Component {
           onChangeText={nextValue => this.setState({ Input_7: nextValue })}
         />
       </View>
+      <View style={this.props.themedStyle.View_11}>
+        <View style={this.props.themedStyle.View_12}>
+          <Image
+            resizeMode="cover"
+            source={{
+              uri:
+                "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/p1_yUS3Jzy.png"
+            }}
+            style={this.props.themedStyle.Image_15}
+          />
+        </View>
+        <View style={this.props.themedStyle.View_13}>
+          <Image
+            resizeMode="cover"
+            source={{
+              uri:
+                "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/p1_yUS3Jzy.png"
+            }}
+            style={this.props.themedStyle.Image_18}
+          />
+        </View>
+      </View>
     </View>
   )
 }
@@ -86,11 +108,9 @@ export default Blank = withStyles(_Blank, theme => ({
     backgroundSize: "auto"
   },
   View_3: {
-    height: 200,
+    height: 0,
     marginLeft: 0,
     marginRight: 0,
-    marginTop: 0,
-    marginBottom: 0,
     paddingLeft: 0,
     paddingRight: 0,
     paddingTop: 0,
@@ -142,7 +162,7 @@ export default Blank = withStyles(_Blank, theme => ({
     marginLeft: 0,
     marginRight: 0,
     marginTop: 8,
-    marginBottom: 15,
+    marginBottom: 8,
     paddingLeft: 5,
     paddingRight: 5,
     paddingTop: 5,
@@ -167,5 +187,139 @@ export default Blank = withStyles(_Blank, theme => ({
     textTransform: "none",
     lineHeight: 12,
     letterSpacing: 0
+  },
+  View_11: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "flex-start",
+    alignItems: "stretch",
+    alignContent: "stretch",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    backgroundSize: "auto"
+  },
+  View_12: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    flexDirection: "column",
+    flexWrap: "wrap",
+    justifyContent: "flex-start",
+    alignItems: "stretch",
+    alignContent: "stretch",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    backgroundSize: "auto"
+  },
+  Image_15: {
+    width: 133,
+    height: 133,
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "visible",
+    alignSelf: "center",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0
+  },
+  View_13: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    flexDirection: "column",
+    flexWrap: "wrap",
+    justifyContent: "flex-start",
+    alignItems: "stretch",
+    alignContent: "stretch",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    backgroundSize: "auto"
+  },
+  Image_18: {
+    width: 133,
+    height: 133,
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "visible",
+    alignSelf: "center",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0
   }
 }))
