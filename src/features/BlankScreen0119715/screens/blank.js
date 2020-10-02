@@ -60,6 +60,7 @@ export class _Blank extends React.Component {
             }}
             style={this.props.themedStyle.Image_15}
           />
+          <Text style={this.props.themedStyle.Text_20}>Product 1</Text>
         </View>
         <View style={this.props.themedStyle.View_13}>
           <Image
@@ -70,6 +71,7 @@ export class _Blank extends React.Component {
             }}
             style={this.props.themedStyle.Image_18}
           />
+          <Text style={this.props.themedStyle.Text_23}>Product 2</Text>
         </View>
       </View>
     </View>
@@ -270,6 +272,36 @@ export default Blank = withStyles(_Blank, theme => ({
     borderBottomWidth: 0,
     borderRadius: 0
   },
+  Text_20: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    alignSelf: "center",
+    fontSize: 16,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontFamily: "Roboto-Regular",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
   View_13: {
     marginLeft: 0,
     marginRight: 0,
@@ -321,5 +353,33 @@ export default Blank = withStyles(_Blank, theme => ({
     borderTopWidth: 0,
     borderBottomWidth: 0,
     borderRadius: 0
+  },
+  Text_23: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 16,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontFamily: "Roboto-Regular",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "center",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 17
   }
 }))
