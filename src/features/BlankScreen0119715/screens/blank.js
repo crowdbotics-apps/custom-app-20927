@@ -35,20 +35,20 @@ export class _Blank extends React.Component {
           }}
           style={styles.Image_5}
         />
-        <Input
-          placeholder="Type an item to search"
-          value=""
-          editable={true}
-          textStyle={{
-            fontSize: 12,
-            color: "#000000",
-            textAlign: "left",
-            fontWeight: "normal",
-            fontStyle: "normal"
-          }}
-          style={styles.Input_7}
-        />
       </View>
+      <Input
+        placeholder="Type an item to search"
+        value=""
+        editable={true}
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "normal"
+        }}
+        style={styles.Input_7}
+      />
       <View style={styles.View_11}>
         <View style={styles.View_12}>
           <Image
