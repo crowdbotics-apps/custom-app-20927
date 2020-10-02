@@ -22,7 +22,7 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { Input_7: "" }
 
   render = () => (
     <View style={this.props.themedStyle.View_1}>
@@ -34,6 +34,20 @@ export class _Blank extends React.Component {
               "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/Recomended_Product_Banner_fhesIad.png"
           }}
           style={this.props.themedStyle.Image_5}
+        />
+        <Input
+          placeholder="Type an item to search"
+          editable={true}
+          textStyle={{
+            fontSize: 12,
+            color: "#000000",
+            textAlign: "left",
+            fontWeight: "normal",
+            fontStyle: "normal"
+          }}
+          style={this.props.themedStyle.Input_7}
+          value={this.state.Input_7}
+          onChangeText={nextValue => this.setState({ Input_7: nextValue })}
         />
       </View>
     </View>
@@ -122,5 +136,36 @@ export default Blank = withStyles(_Blank, theme => ({
     borderTopWidth: 0,
     borderBottomWidth: 0,
     borderRadius: 0
+  },
+  Input_7: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 8,
+    marginBottom: 15,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 10,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
   }
 }))
