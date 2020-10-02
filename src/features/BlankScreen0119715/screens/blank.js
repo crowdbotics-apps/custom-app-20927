@@ -61,6 +61,20 @@ export class _Blank extends React.Component {
             style={this.props.themedStyle.Image_15}
           />
           <Text style={this.props.themedStyle.Text_20}>Product 1</Text>
+          <Text style={this.props.themedStyle.Text_25}>$299</Text>
+          <Button
+            textStyle={{
+              fontSize: 14,
+              color: "#000000",
+              textAlign: "center",
+              fontWeight: "normal",
+              fontStyle: "normal"
+            }}
+            style={this.props.themedStyle.Button_30}
+            onPress={() => alert("Pressed!")}
+          >
+            View More
+          </Button>
         </View>
         <View style={this.props.themedStyle.View_13}>
           <Image
@@ -72,6 +86,7 @@ export class _Blank extends React.Component {
             style={this.props.themedStyle.Image_18}
           />
           <Text style={this.props.themedStyle.Text_23}>Product 2</Text>
+          <Text style={this.props.themedStyle.Text_28}>$199</Text>
         </View>
       </View>
     </View>
@@ -302,6 +317,62 @@ export default Blank = withStyles(_Blank, theme => ({
     lineHeight: 12,
     letterSpacing: 0
   },
+  Text_25: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 16,
+    color: "#64e6e8",
+    backgroundColor: "#ffffff",
+    fontFamily: "OpenSans-Bold",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "center",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Button_30: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 14,
+    color: "#000000",
+    backgroundColor: "#ff0000",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#c8c8c8",
+    borderStyle: "solid",
+    borderWidth: 4,
+    borderRadius: 8,
+    textAlign: "center",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
   View_13: {
     marginLeft: 0,
     marginRight: 0,
@@ -380,6 +451,35 @@ export default Blank = withStyles(_Blank, theme => ({
     textAlignVertical: "center",
     textDecorationLine: "none",
     textTransform: "none",
-    lineHeight: 17
+    lineHeight: 12
+  },
+  Text_28: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 16,
+    color: "#64e6e8",
+    backgroundColor: "#ffffff",
+    fontFamily: "OpenSans-Bold",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "center",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
   }
 }))
